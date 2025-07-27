@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/object-detection.Debug-Live_Stream+AE722F80F55D5LS-database"
+		},
+		{
+			"file" : "/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/object-detection.Debug-Live_Stream+AE722F80F55D5LS-database.rule"
+		},
+		{
+			"file" : "/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/object-detection.Debug-Live_Stream+AE722F80F55D5LS/src/object-detection.Debug-Live_Stream+AE722F80F55D5LS-stamp/object-detection.Debug-Live_Stream+AE722F80F55D5LS-database.rule"
+		},
+		{
+			"file" : "/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/object-detection.Debug-Live_Stream+AE722F80F55D5LS/src/object-detection.Debug-Live_Stream+AE722F80F55D5LS-stamp/object-detection.Debug-Live_Stream+AE722F80F55D5LS-configure.rule"
+		},
+		{
+			"file" : "/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/object-detection.Debug-Live_Stream+AE722F80F55D5LS/src/object-detection.Debug-Live_Stream+AE722F80F55D5LS-stamp/object-detection.Debug-Live_Stream+AE722F80F55D5LS-patch.rule"
+		},
+		{
+			"file" : "/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/object-detection.Debug-Live_Stream+AE722F80F55D5LS/src/object-detection.Debug-Live_Stream+AE722F80F55D5LS-stamp/object-detection.Debug-Live_Stream+AE722F80F55D5LS-update.rule"
+		},
+		{
+			"file" : "/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/object-detection.Debug-Live_Stream+AE722F80F55D5LS/src/object-detection.Debug-Live_Stream+AE722F80F55D5LS-stamp/object-detection.Debug-Live_Stream+AE722F80F55D5LS-download.rule"
+		},
+		{
+			"file" : "/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/object-detection.Debug-Live_Stream+AE722F80F55D5LS/src/object-detection.Debug-Live_Stream+AE722F80F55D5LS-stamp/object-detection.Debug-Live_Stream+AE722F80F55D5LS-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"object-detection.Debug-Live_Stream+AE722F80F55D5LS"
+		],
+		"name" : "object-detection.Debug-Live_Stream+AE722F80F55D5LS-database"
+	}
+}
