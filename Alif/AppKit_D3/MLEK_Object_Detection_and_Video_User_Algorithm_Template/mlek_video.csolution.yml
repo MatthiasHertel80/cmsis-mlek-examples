@@ -64,7 +64,7 @@ solution:
   # will be used to find the compatible board layer for the specified device/board.
   target-types:
     # Reference application target
-    - type: AE722F80F55D5LS
+    - type: AE722F80F55D5LS-U55-256
       device: AE722F80F55D5LS
       board: AppKit-E7-AIML:Gen 2
       variables:
