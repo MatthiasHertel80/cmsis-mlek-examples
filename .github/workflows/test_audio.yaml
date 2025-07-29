@@ -82,11 +82,34 @@ jobs:
         key: cmsis-mlek-download
         path: /home/runner/.cache/arm/packs/.Download
 
-
-    # Build the release and debug executable for the AC6 compiler
     - name: AC6-Build-Test 4 context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       working-directory: ./Alif/AppKit_D3/MLEK_Keyword_Spotting_and_Audio_User_Algorithm_Template
       run: |
         cbuild mlek_audio.csolution.yml --update-rte --packs --no-schema-check \
         --context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}} \
         --toolchain AC6 --rebuild
+
+    - name: AC6-Execution-Test 4 context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
+      working-directory: ./Alif/AppKit_D3/MLEK_Keyword_Spotting_and_Audio_User_Algorithm_Template
+      run: |
+        ${{ matrix.context.model }} \
+        -a ./out/${{matrix.context.proj}}/${{matrix.context.target_type}}/${{matrix.context.build_type}}/${{matrix.context.proj}}.axf \
+        -f ./board/${{matrix.context.fvp_dir}}/fvp_config.txt \
+        ${{matrix.context.args}} \
+        -C ${{matrix.context.mps}}_board.telnetterminal0.start_telnet=0 \
+        -C ${{matrix.context.mps}}_board.uart0.out_file=fvp_stdout_${{matrix.context.build_type}}_${{matrix.context.target_type}}_${{matrix.context.model}}.log \
+        --simlimit 30
+
+    - name: Show and check FVP UART output for fvp_stdout_${{matrix.context.build_type}}_${{matrix.context.target_type}}_${{matrix.context.model}}.log
+      working-directory: ./Alif/AppKit_D3/MLEK_Keyword_Spotting_and_Audio_User_Algorithm_Template
+      run: |
+        echo "Show FVP UART output..."
+        cat fvp_stdout_${{matrix.context.build_type}}_${{matrix.context.target_type}}_${{matrix.context.model}}.log
+        echo "Checking FVP UART output..."
+        test "$(grep "FAIL: " fvp_stdout_${{matrix.context.build_type}}_${{matrix.context.target_type}}_${{matrix.context.model}}.log | wc -l)" -eq 0
+
+    - name: Upload FVP UART output for ${{matrix.context.build_type}}_${{matrix.context.target_type}}_${{matrix.context.model}}.log
+      uses: actions/upload-artifact@v4
+      with:
+        name: fvp_stdout_${{matrix.context.build_type}}_${{matrix.context.target_type}}_${{matrix.context.model}}.log
+        path: ./Alif/AppKit_D3/MLEK_Keyword_Spotting_and_Audio_User_Algorithm_Template/fvp_stdout_${{matrix.context.build_type}}_${{matrix.context.target_type}}_${{matrix.context.model}}.log
