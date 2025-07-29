@@ -28,6 +28,7 @@ on:
 
 jobs:
   CI:
+    strategy:  
       matrix:
         context: [
           {proj: kws,  build_type: Release-Data_Array,   target_type: AVH-SSE-300-U55,  model: FVP_Corstone_SSE-300_Ethos-U55,  fvp_dir: Corstone-300,  args: '-C mps3_board.v_path=./board/Corstone-300/vsi/python/',  mps: mps3},
