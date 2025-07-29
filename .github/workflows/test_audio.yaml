@@ -79,6 +79,13 @@ jobs:
         key: cmsis-mlek-download
         path: /home/runner/.cache/arm/packs/.Download
 
+    - name: Build the release type with hardcoded command line
+      working-directory: ./Alif/AppKit_D3/MLEK_Keyword_Spotting_and_Audio_User_Algorithm_Template    
+      run: |
+        cbuild mlek_audio.csolution.yml --update-rte --packs --no-schema-check \
+        --context kws.Release-Data_Array+AVH-SSE-300-U55 \
+        --toolchain AC6 --rebuild
+
     # Build the release and debug executable for the AC6 compiler
     - name: AC6-Build-Test 4 context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       working-directory: ./Alif/AppKit_D3/MLEK_Keyword_Spotting_and_Audio_User_Algorithm_Template
