@@ -1983,10 +1983,10 @@ build:
           category: sourceCpp
           attr: config
           version: 1.25.2
-    - component: tensorflow::Machine Learning:TensorFlow:Kernel&CMSIS-NN@1.25.2
-      condition: CMSIS-NN
+    - component: tensorflow::Machine Learning:TensorFlow:Kernel&Ethos-U@1.25.2
+      condition: Ethos-U
       from-pack: tensorflow::tensorflow-lite-micro@1.25.2
-      selected-by: Machine Learning:TensorFlow:Kernel&CMSIS-NN
+      selected-by: Machine Learning:TensorFlow:Kernel&Ethos-U
       files:
         - file: ${CMSIS_PACK_ROOT}/tensorflow/tensorflow-lite-micro/1.25.2
           category: include
@@ -2231,7 +2231,7 @@ build:
         - file: ${CMSIS_PACK_ROOT}/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/kernels/embedding_lookup.cpp
           category: sourceCpp
           version: 1.25.2
-        - file: ${CMSIS_PACK_ROOT}/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/kernels/ethosu.cpp
+        - file: ${CMSIS_PACK_ROOT}/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/kernels/ethos_u/ethosu.cpp
           category: sourceCpp
           version: 1.25.2
         - file: ${CMSIS_PACK_ROOT}/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/kernels/exp.cpp
@@ -2622,6 +2622,10 @@ build:
   linker:
     script: ../board/AppKit-E7_M55_HE/RTE/Device/AE722F80F55D5LS_M55_HE/linker_ac6_mram.sct
   groups:
+    - group: Documentation
+      files:
+        - file: ../../README.md
+          category: doc
     - group: Application Main
       files:
         - file: src/main_kws.cpp
@@ -2729,7 +2733,7 @@ build:
         - pack: tensorflow::tensorflow-lite-micro@1.25.2
       components:
         - component: tensorflow::Machine Learning:TensorFlow:Kernel Utils@1.25.2
-        - component: tensorflow::Machine Learning:TensorFlow:Kernel&CMSIS-NN@1.25.2
+        - component: tensorflow::Machine Learning:TensorFlow:Kernel&Ethos-U@1.25.2
         - component: tensorflow::Machine Learning:TensorFlow:Testing@1.25.2
     - license: Apache-2.0
       packs:

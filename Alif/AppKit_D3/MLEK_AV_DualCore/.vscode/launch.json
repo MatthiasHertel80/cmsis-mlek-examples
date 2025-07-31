@@ -34,9 +34,9 @@
                     "-nogui",
                     "-localhostonly",
                     "-port",
-                    "3335"
+                    "3333"
                 ],
-                "port": "3335"
+                "port": "3333"
             },
             "cmsis": {
                 "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
@@ -59,7 +59,7 @@
                 "continue"
             ],
             "target": {
-                "port": "3335"
+                "port": "3333"
             },
             "cmsis": {
                 "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",

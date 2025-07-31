@@ -62,7 +62,7 @@ solution:
             name: JLink Server
             port: 3333
             protocol: swd
-            start-pname: AE722F80F55D5LS_M55_HE
+            start-pname: M55_HP
 
     # Arm Corstone-300 target
     - type: AVH-SSE-300-U55
@@ -78,6 +78,9 @@ solution:
             config: ./board/Corstone-300/fvp_config.txt
             args:
               - -C mps3_board.v_path=./board/Corstone-300/vsi/python/
+          images:
+            - project-context: object-detection.Debug-Live_Stream
+            - project-context: kws.Debug-Live_Stream
 
   projects:
     - project: MLEK_Object_Detection/object-detection/object-detection.cproject.yml

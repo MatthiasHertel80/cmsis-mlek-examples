@@ -91,11 +91,11 @@ project:
     - component: Data Processing:Math:ruy&tensorflow
 
     # TensorFlow Kernel variant for devices without Ethos-U
-    - component: Machine Learning:TensorFlow:Kernel&CMSIS-NN
-      not-for-context: \.*-U[0-9]{2}.*
+#   - component: Machine Learning:TensorFlow:Kernel&CMSIS-NN
+#     not-for-context: \.*-U[0-9]{2}.*
     # TensorFlow Kernel variant for devices with Ethos-U
     - component: Machine Learning:TensorFlow:Kernel&Ethos-U
-      for-context: \.*-U[0-9]{2}.*
+#     for-context: \.*-U[0-9]{2}.*
 
     - component: Machine Learning:TensorFlow:Kernel Utils
     - component: Machine Learning:TensorFlow:Testing
