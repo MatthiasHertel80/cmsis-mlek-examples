@@ -1,8 +1,0 @@
-/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/database.dir
-/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/object-detection.Debug-Live_Stream+AE722F80F55D5LS.dir
-/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/object-detection.Debug-Live_Stream+AE722F80F55D5LS-build.dir
-/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/object-detection.Debug-Live_Stream+AE722F80F55D5LS-configure.dir
-/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/object-detection.Debug-Live_Stream+AE722F80F55D5LS-executes.dir
-/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/object-detection.Debug-Live_Stream+AE722F80F55D5LS-database.dir
-/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/edit_cache.dir
-/Users/mather01/Documents/GitHub/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_Object_Detection_and_Video_User_Algorithm_Template/tmp/CMakeFiles/rebuild_cache.dir

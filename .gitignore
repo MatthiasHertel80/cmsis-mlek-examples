@@ -53,3 +53,6 @@ dkms.conf
 
 # debug information files
 *.dwo
+Alif/AppKit_D3/MLEK_Audio/.DS_Store
+Alif/AppKit_D3/.DS_Store
+/Alif/AppKit_D3/MLEK_Video/tmp
