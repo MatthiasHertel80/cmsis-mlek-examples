@@ -56,3 +56,18 @@ dkms.conf
 Alif/AppKit_D3/MLEK_Audio/.DS_Store
 Alif/AppKit_D3/.DS_Store
 /Alif/AppKit_D3/MLEK_Video/tmp
+
+# Clangd
+.clangd
+
+# CMSIS Solution files and folders not to be tracked
+# default directory of build artifacts
+**/out
+# directory containing intermediate files to be regenerated
+**/tmp
+# cbuild output files
+*.cbuild.yml
+*.cbuild-idx.yml
+*.cbuild-run.yml
+*.cbuild-set.yml
+

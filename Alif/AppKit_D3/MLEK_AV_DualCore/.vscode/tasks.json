@@ -19,7 +19,7 @@
         }
     ],
     "tasks": [
-          {
+        {
             "label": "Alif: Install M55_HE and M55_HP debug stubs (dual core configuration)",
             "type": "shell",
             "command": [
@@ -69,7 +69,7 @@
                 "echo Connect > .cmd.jlink &&",
                 "echo Erase >> .cmd.jlink &&",
                 "echo Exit >> .cmd.jlink &&",
-                "JLinkExe -device AE722F80F55D5LS_M55_HP -if SWD -speed auto -commandfile .cmd.jlink"
+                "JLink.exe -device AE722F80F55D5LS_M55_HP -if SWD -speed auto -commandfile .cmd.jlink"
             ],
             "options": {
                 "cwd": "${workspaceFolder}/"
@@ -112,10 +112,10 @@
             "type": "shell",
             "command": [
                 "echo Connect > .cmd.jlink &&",
-                "echo LoadFile \"out/object-detection/AE722F80F55D5LS/Debug-Live_Stream/object-detection.hex\" >> .cmd.jlink &&",
-                "echo LoadFile \"out/kws/AE722F80F55D5LS/Debug-Live_Stream/kws.hex\" >> .cmd.jlink &&",
+                "echo LoadFile \"out\\object-detection\\AE722F80F55D5LS\\Debug-Live_Stream\\object-detection.hex\" >> .cmd.jlink &&",
+                "echo LoadFile \"out\\kws\\AE722F80F55D5LS\\Debug-Live_Stream\\kws.hex\" >> .cmd.jlink &&",
                 "echo Exit >> .cmd.jlink &&",
-                "JLinkExe -device AE722F80F55D5LS_M55_HP -if SWD -speed auto -commandfile .cmd.jlink"
+                "JLink.exe -device AE722F80F55D5LS_M55_HP -if SWD -speed auto -commandfile .cmd.jlink"
             ],
             "options": {
                 "cwd": "${workspaceFolder}/"
@@ -156,7 +156,7 @@
         {
             "label": "CMSIS Run",
             "type": "shell",
-            "command": "JLinkGDBServerCLExe",
+            "command": "JLinkGDBServerCL.exe",
             "options": {
                 "cwd": "${workspaceFolder}/"
             },

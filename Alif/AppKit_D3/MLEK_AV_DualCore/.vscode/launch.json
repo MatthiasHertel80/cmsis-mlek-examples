@@ -6,7 +6,7 @@
             "type": "gdbtarget",
             "request": "launch",
             "cwd": "${workspaceFolder}/",
-            "program": "out/object-detection/AE722F80F55D5LS/Debug-Live_Stream/object-detection.axf",
+            "program": "out\\object-detection\\AE722F80F55D5LS\\Debug-Live_Stream\\object-detection.axf",
             "gdb": "arm-none-eabi-gdb",
             "preLaunchTask": "CMSIS Load",
             "initCommands": [
@@ -19,7 +19,7 @@
                 "continue"
             ],
             "target": {
-                "server": "JLinkGDBServerCLExe",
+                "server": "JLinkGDBServerCL.exe",
                 "serverParameters": [
                     "-device",
                     "AE722F80F55D5LS_M55_HP",
@@ -48,7 +48,7 @@
             "type": "gdbtarget",
             "request": "attach",
             "cwd": "${workspaceFolder}/",
-            "program": "out/object-detection/AE722F80F55D5LS/Debug-Live_Stream/object-detection.axf",
+            "program": "out\\object-detection\\AE722F80F55D5LS\\Debug-Live_Stream\\object-detection.axf",
             "gdb": "arm-none-eabi-gdb",
             "initCommands": [
                 ""
@@ -71,7 +71,7 @@
             "type": "gdbtarget",
             "request": "launch",
             "cwd": "${workspaceFolder}/",
-            "program": "out/kws/AE722F80F55D5LS/Debug-Live_Stream/kws.axf",
+            "program": "out\\kws\\AE722F80F55D5LS\\Debug-Live_Stream\\kws.axf",
             "gdb": "arm-none-eabi-gdb",
             "initCommands": [
                 ""
@@ -82,7 +82,7 @@
                 "continue"
             ],
             "target": {
-                "server": "JLinkGDBServerCLExe",
+                "server": "JLinkGDBServerCL.exe",
                 "serverParameters": [
                     "-device",
                     "AE722F80F55D5LS_M55_HE",
