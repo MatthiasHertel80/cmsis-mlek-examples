@@ -45,7 +45,6 @@ solution:
       debug: off
       optimize: speed
 
-
   # The target types for AVH models are predefined and should not be changed. 
   # The target types for hardware targets can be added and layer discovery
   # will be used to find the compatible board layer for the specified device/board.

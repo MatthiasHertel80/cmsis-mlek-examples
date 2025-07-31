@@ -1,6 +1,6 @@
 CompileFlags:
   CompilationDatabase: >-
-    /Users/mather01/Documents/tmp/DualAlif_updated/out/object-detection/AE722F80F55D5LS/Debug-Live_Stream
+    c:\w\cmsis-mlek-examples\Alif\AppKit_D3\MLEK_AV_DualCore\out\object-detection\AE722F80F55D5LS\Debug-Live_Stream
   Add:
     - '-D_ILP32=1'
     - '-D_USE_STATIC_INLINE=1'
@@ -419,119 +419,126 @@ CompileFlags:
     - '-D__thumb__=1'
     - '-D__ARMCOMPILER_LIBCXX=1'
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/MLEK_Object_Detection/object-detection/include
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/MLEK_Object_Detection/object-detection/include
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/MLEK_Object_Detection/board/AppKit-E7_M55_HP/ConductorTool
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/MLEK_Object_Detection/board/AppKit-E7_M55_HP/ConductorTool
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/tmp/object-detection.Debug-Live_Stream+AE722F80F55D5LS
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/tmp/object-detection.Debug-Live_Stream+AE722F80F55D5LS
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/MLEK_Object_Detection/object-detection/RTE/_Debug-Live_Stream_AE722F80F55D5LS
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/MLEK_Object_Detection/object-detection/RTE/_Debug-Live_Stream_AE722F80F55D5LS
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/MLEK_Object_Detection/board/AppKit-E7_M55_HP/RTE/Device/AE722F80F55D5LS_M55_HP
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/MLEK_Object_Detection/board/AppKit-E7_M55_HP/RTE/Device/AE722F80F55D5LS_M55_HP
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/MLEK_Object_Detection/board/AppKit-E7_M55_HP/RTE/Services/AE722F80F55D5LS_M55_HP
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/MLEK_Object_Detection/board/AppKit-E7_M55_HP/RTE/Services/AE722F80F55D5LS_M55_HP
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/MLEK_Object_Detection/object-detection/RTE/CMSIS
-    - '-I/Users/mather01/.cache/arm/packs/ARM/CMSIS-Compiler/2.1.0/include'
-    - '-I/Users/mather01/.cache/arm/packs/ARM/CMSIS-DSP/1.16.0/Include'
-    - '-I/Users/mather01/.cache/arm/packs/ARM/CMSIS-DSP/1.16.0/PrivateInclude'
-    - '-I/Users/mather01/.cache/arm/packs/ARM/CMSIS-NN/7.0.0/Include'
-    - '-I/Users/mather01/.cache/arm/packs/ARM/CMSIS-RTX/5.9.0/Include'
-    - '-I/Users/mather01/.cache/arm/packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include'
-    - '-I/Users/mather01/.cache/arm/packs/ARM/CMSIS/6.2.0/CMSIS/Driver/Include'
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/MLEK_Object_Detection/object-detection/RTE/CMSIS
     - >-
-      -I/Users/mather01/.cache/arm/packs/ARM/CMSIS/6.2.0/CMSIS/Driver/VIO/Include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS-Compiler/2.1.0/include
+    - '-IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS-DSP/1.16.2/Include'
     - >-
-      -I/Users/mather01/.cache/arm/packs/ARM/CMSIS/6.2.0/CMSIS/Driver/vStream/Include
-    - '-I/Users/mather01/.cache/arm/packs/ARM/CMSIS/6.2.0/CMSIS/RTOS2/Include'
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS-DSP/1.16.2/PrivateInclude
+    - '-IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS-NN/7.0.0/Include'
+    - '-IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Include'
     - >-
-      -I/Users/mather01/.cache/arm/packs/ARM/ethos-u-core-driver/1.25.2/ethos_u_core_driver/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
     - >-
-      -I/Users/mather01/.cache/arm/packs/ARM/ethos-u-core-driver/1.25.2/ethos_u_core_driver/src
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Driver/Include
     - >-
-      -I/Users/mather01/.cache/arm/packs/ARM/ml-embedded-eval-kit-uc-api/24.8.0/source/application/api/common/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Driver/VIO/Include
     - >-
-      -I/Users/mather01/.cache/arm/packs/ARM/ml-embedded-eval-kit-uc-api/24.8.0/source/application/api/use_case/object_detection/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Driver/vStream/Include
     - >-
-      -I/Users/mather01/.cache/arm/packs/ARM/ml-embedded-eval-kit-uc-api/24.8.0/source/log/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/RTOS2/Include
     - >-
-      -I/Users/mather01/.cache/arm/packs/ARM/ml-embedded-eval-kit-uc-api/24.8.0/source/math/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/ethos-u-core-driver/1.25.2/ethos_u_core_driver/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/Alif_CMSIS/Include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/ethos-u-core-driver/1.25.2/ethos_u_core_driver/src
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/Alif_CMSIS/Source
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/ml-embedded-eval-kit-uc-api/24.8.0/source/application/api/common/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/Device/core/common/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/ml-embedded-eval-kit-uc-api/24.8.0/source/application/api/use_case/object_detection/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/Device/soc/AE722F80F55D5/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/ml-embedded-eval-kit-uc-api/24.8.0/source/log/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/Device/soc/AE722F80F55D5/include/rtss_hp
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/ARM/ml-embedded-eval-kit-uc-api/24.8.0/source/math/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/Device/system/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/Alif_CMSIS/Include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/drivers/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/Alif_CMSIS/Source
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/libs/board_config
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/Device/core/common/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/libs/retarget_io/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/Device/soc/AE722F80F55D5/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/se_services/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/Device/soc/AE722F80F55D5/include/rtss_hp
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/se_services/port/include
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/Device/system/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/AlifSemiconductor/Ensemble/2.0.0-rc2.15/se_services/templates
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/drivers/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/flatbuffers/1.25.2/src/include
-    - '-I/Users/mather01/.cache/arm/packs/tensorflow/gemmlowp/1.25.2/src'
-    - '-I/Users/mather01/.cache/arm/packs/tensorflow/kissfft/1.25.2/src'
-    - '-I/Users/mather01/.cache/arm/packs/tensorflow/kissfft/1.25.2/src/tools'
-    - '-I/Users/mather01/.cache/arm/packs/tensorflow/ruy/1.25.2/src'
-    - '-I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2'
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/libs/board_config
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/compiler/mlir/lite/core/api
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/libs/retarget_io/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/compiler/mlir/lite/core/c
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/se_services/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/compiler/mlir/lite/kernels/internal
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/se_services/port/include
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/compiler/mlir/lite/schema
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/AlifSemiconductor/Ensemble/2.0.0/se_services/templates
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/flatbuffers/1.25.2/src/include
+    - '-IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/gemmlowp/1.25.2/src'
+    - '-IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/kissfft/1.25.2/src'
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/c
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/kissfft/1.25.2/src/tools
+    - '-IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/ruy/1.25.2/src'
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/core
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/core/api
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/compiler/mlir/lite/core/api
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/core/c
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/compiler/mlir/lite/core/c
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/compiler/mlir/lite/kernels/internal
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels/internal
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/compiler/mlir/lite/schema
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels/internal/optimized
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels/internal/reference
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/c
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels/internal/reference/integer_ops
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/core
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/core/api
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/arena_allocator
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/core/c
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/cortex_m_generic
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/kernels
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels/internal
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/memory_planner
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels/internal/optimized
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/testing
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels/internal/reference
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/tflite_bridge
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/kernels/internal/reference/integer_ops
     - >-
-      -I/Users/mather01/.cache/arm/packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/schema
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/MLEK_Object_Detection/object-detection/config
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/arena_allocator
     - >-
-      -I/Users/mather01/Documents/tmp/DualAlif_updated/MLEK_Object_Detection/board/AppKit-E7_M55_HP
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/cortex_m_generic
+    - >-
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/kernels
+    - >-
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/memory_planner
+    - >-
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/testing
+    - >-
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/micro/tflite_bridge
+    - >-
+      -IC:/Users/reikei01/AppData/Local/Arm/Packs/tensorflow/tensorflow-lite-micro/1.25.2/tensorflow/lite/schema
+    - >-
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/MLEK_Object_Detection/object-detection/config
+    - >-
+      -IC:/w/cmsis-mlek-examples/Alif/AppKit_D3/MLEK_AV_DualCore/MLEK_Object_Detection/board/AppKit-E7_M55_HP
