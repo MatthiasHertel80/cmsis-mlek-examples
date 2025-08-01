@@ -34,9 +34,9 @@ project:
   output:
     type:
       - elf
-      - bin
       - hex
       - map
+      - bin
 
   connections:
     - connect: Board Layer with Audio interface
@@ -106,5 +106,5 @@ project:
     - component: ML Eval Kit:Voice:Keyword spotting
 
   layers:
-    - layer: ../board/AppKit-E7_M55_HE/Board_HE.clayer.yml
-      type: Board
+    - layer: $KWS-Board-Layer$
+#   - layer: ../board/AppKit-E7_M55_HE/Board_HE.clayer.yml
