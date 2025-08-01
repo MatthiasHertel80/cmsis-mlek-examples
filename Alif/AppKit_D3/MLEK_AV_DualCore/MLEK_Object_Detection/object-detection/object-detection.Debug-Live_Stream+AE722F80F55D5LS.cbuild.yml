@@ -60,14 +60,17 @@ build:
   debug: on
   misc:
     ASM:
+      - -gdwarf-5
       - -masm=auto
     C:
+      - -gdwarf-5
       - -std=gnu11
       - -Wno-macro-redefined
       - -Wno-pragma-pack
       - -Wno-parentheses-equality
       - -Wno-license-management
     CPP:
+      - -gdwarf-5
       - -Wno-macro-redefined
       - -Wno-pragma-pack
       - -Wno-parentheses-equality
@@ -1834,12 +1837,12 @@ build:
           category: source
           attr: template
           version: 2.0.0
-          select: MT9M114 Camera Sensor FreeRTOS Demo
+          select: ARX3A0 Camera Sensor FreeRTOS Demo
         - file: ${CMSIS_PACK_ROOT}/AlifSemiconductor/Ensemble/2.0.0/Boards/Templates/bayer2rgb/bayer.h
           category: header
           attr: template
           version: 2.0.0
-          select: ARX3A0 Camera Sensor FreeRTOS Demo
+          select: MT9M114 Camera Sensor FreeRTOS Demo
         - file: ${CMSIS_PACK_ROOT}/AlifSemiconductor/Ensemble/2.0.0/Boards/Templates/bayer2rgb/bayer2rgb.c
           category: source
           attr: template
@@ -2761,6 +2764,10 @@ build:
   linker:
     script: ../board/AppKit-E7_M55_HP/RTE/Device/AE722F80F55D5LS_M55_HP/linker_ac6_mram.sct
   groups:
+    - group: Documentation
+      files:
+        - file: ../../README.md
+          category: doc
     - group: Application Main
       files:
         - file: src/main_object_detection.cpp
