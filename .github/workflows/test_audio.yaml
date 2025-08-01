@@ -83,7 +83,7 @@ jobs:
         path: /home/runner/.cache/arm/packs/.Download
 
     - name: AC6-Build-Test 4 context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
-      working-directory: ./Alif/AppKit_D3/
+      working-directory: ./Alif/AppKit_D3/MLEK_Audio
       run: |
         cbuild mlek_audio.csolution.yml --update-rte --packs --no-schema-check \
         --context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}} \
