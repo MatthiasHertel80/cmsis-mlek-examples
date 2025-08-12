@@ -36,7 +36,7 @@ default:
         - -std=c++17
         - -fno-exceptions
         - -fno-rtti
-        - -ffp-mode=full
+#       - -ffp-mode=full
       C:
         - -std=gnu11
       Link:
