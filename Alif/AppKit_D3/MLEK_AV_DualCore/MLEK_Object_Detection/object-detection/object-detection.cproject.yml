@@ -36,7 +36,6 @@ project:
       - elf
       - map
       - hex
-      - bin
 
   connections:
     - connect: Board Layer with Video interface
