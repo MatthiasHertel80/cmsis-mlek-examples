@@ -72,33 +72,10 @@ jobs:
         key: Alif
         path: /home/runner/.cache/arm/packs/.Download
 
-#   - name: Initialize CMSIS pack root folder
-#     run: |
-#       cpackget init https://www.keil.com/pack/index.pidx
-#       cpackget update-index
-
-#   - name: Install python
-#     uses: actions/setup-python@v5
-#     with:
-#       python-version: '3.9'
-
-#   - name: Install opencv-python
-#     run: |
-#       pip install opencv-python
-#       pip list
-#       pip show opencv-python
-#       python -c "import cv2; print('Installed cv2 version: ', cv2.__version__)"
-
-#   - name: Cache downloaded packs
-#     if: always()    
-#     uses: actions/cache@v4
-#     with:
-#       key: cmsis-mlek-download
-#       path: /home/runner/.cache/arm/packs/.Download
-
     - name: ${{matrix.context.tool}} Build-Test for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       working-directory: ${{matrix.context.dir}}
       run: |
+        mkdir -p ./out
         cbuild ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}} --toolchain ${{matrix.context.tool}} --packs > ./out/build.log
 
     - name: Upload output for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
