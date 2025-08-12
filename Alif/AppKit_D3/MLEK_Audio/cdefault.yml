@@ -56,7 +56,7 @@ default:
         - -std=c++17
         - -fno-exceptions
         - -fno-rtti
-        - -ffp-mode=full
+        - -ffp-model=full
       C:
         - -std=gnu11
         - -Wno-nan-infinity-disabled
