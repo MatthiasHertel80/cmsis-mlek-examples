@@ -96,10 +96,10 @@ jobs:
 #       key: cmsis-mlek-download
 #       path: /home/runner/.cache/arm/packs/.Download
 
-    - name: AC6-Build-Test for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
+    - name: ${{matrix.context.tool}} Build-Test for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       working-directory: ${{matrix.context.dir}}
       run: |
-        cbuild ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}} --toolchain .${{matrix.context.tool}} --packs
+        cbuild ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}} --toolchain ${{matrix.context.tool}} --packs
 
     - name: Upload output for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       uses: actions/upload-artifact@v4
