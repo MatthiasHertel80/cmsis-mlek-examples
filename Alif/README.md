@@ -1,6 +1,6 @@
 # Examples for Alif Semicontuctor
 
-The examples for Alif Semiconductor are configured 
+The examples for Alif Semiconductor are configured for evaluation boards.
 
 ## JLink
 
@@ -11,7 +11,7 @@ When using the SEGGER JLink debug adapter ensure that JLink version 8.44 or high
 Before using examples on the board it is required to program the ATOC of the device
 using the Alif SETOOLS.
 
-Refer to the section [Usage](https://www.keil.arm.com/packs/ensemble-alifsemiconductor)
+Refer to the section [Usage](https://github.com/alifsemi/alif_ensemble-cmsis-dfp/blob/main/docs/Overview.md)
 in the overview page of the Alif Semiconductor Ensemble DFP/BSP for information on how
 to setup these tools.
 
@@ -21,6 +21,10 @@ In VS Code use the menu command **Terminal - Run Tasks** and execute one of the 
 - "Alif: Install M55_HE and M55_HP debug stubs (dual core configuration)"
 
 ## [Examples for Ensemble E7 AI/ML AppKit](./AppKit_D3)
+
+The [Alif AppKit-E7-AIML](https://www.keil.arm.com/boards/alif-semiconductor-appkit-e7-aiml-gen-2-140e28d/guide/) features a dual-core Cortex-M55 each paired with an Ethos-U55 NPU.
+
+> TIP: [Webinar 3: ML and Dual-Core Debugging on Alif Ensemble E7](https://www.arm.com/resources/webinar/keil-studio) shows how to use this board.
 
 > Note:
 >
@@ -34,3 +38,10 @@ Example                            | Description
 [MLEK_Video](https://www.keil.arm.com/packs/cmsis-mlek-arm/overview/) | Object detection  ML application running on M55_HP core and Ethos-U55
 MLEK_AV_DualCore | Combines MLEK Audio and MLEK Video running both applications on separate cores
 
+## CI Verification
+
+A [GitHub Workflow](https://github.com/Arm-Examples/cmsis-mlek-examples/blob/main/.github/workflows/test_audio.yaml) exemplifies a verification process in a CI system. It compiles the application for [Arm Virtual Hardware FVP](https://github.com/ARM-software/AVH) and executes it. The output is stored as artifact.
+
+In a similar way it could be also compiled for the hardware target.
+
+> TIP: You may fork this repository to explore this workflow.
