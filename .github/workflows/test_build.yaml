@@ -26,6 +26,8 @@ on:
   #  - cron: '00 20 * * 6'
 
 
+# NOTE: GCC has issues with Helium optimizations, hence removed from test builds
+  
 jobs:
   CI:
     strategy:  
