@@ -117,9 +117,6 @@ layer:
         - file: ./ethosu_cb_os_rtos2.c
 
   linker:
-    - for-compiler: CLANG
-      script: ./clang_linker_script_custom.ld.src
-      regions: ./RTE/Device/AE722F80F55D5LS_M55_HE/regions_AppKit-E7-AIML.h
     - for-compiler: GCC
       script: ./linker_gnu_mram_custom.ld.src
       regions: ./RTE/Device/AE722F80F55D5LS_M55_HE/app_mem_regions.h
