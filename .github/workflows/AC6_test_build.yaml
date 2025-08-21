@@ -14,7 +14,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-name: Alif examples build test
+name: AC6 Alif build test
 on:
 
   workflow_dispatch:
@@ -25,8 +25,6 @@ on:
   #schedule:
   #  - cron: '00 20 * * 6'
 
-
-# NOTE: GCC has issues with Helium optimizations, hence removed from test builds
   
 jobs:
   CI:
@@ -35,20 +33,12 @@ jobs:
         context: [
           { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Audio,                   proj: mlek_audio,           target_type: AE722F80F55D5LS-U55-128, build_type: Debug-Live_Stream },
           { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Audio,                   proj: mlek_audio,           target_type: AE722F80F55D5LS-U55-128, build_type: Release-Live_Stream },
-#         { tool: CLANG, dir: ./Alif/AppKit_D3/MLEK_Audio,                   proj: mlek_audio,           target_type: AE722F80F55D5LS-U55-128, build_type: Debug-Live_Stream },
-#         { tool: CLANG, dir: ./Alif/AppKit_D3/MLEK_Audio,                   proj: mlek_audio,           target_type: AE722F80F55D5LS-U55-128, build_type: Release-Live_Stream },
           { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Video,                   proj: mlek_video,           target_type: AE722F80F55D5LS-U55-256, build_type: Debug-Live_Stream },
           { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Video,                   proj: mlek_video,           target_type: AE722F80F55D5LS-U55-256, build_type: Release-Live_Stream },
-#         { tool: CLANG, dir: ./Alif/AppKit_D3/MLEK_Video,                   proj: mlek_video,           target_type: AE722F80F55D5LS-U55-256, build_type: Debug-Live_Stream },
-#         { tool: CLANG, dir: ./Alif/AppKit_D3/MLEK_Video,                   proj: mlek_video,           target_type: AE722F80F55D5LS-U55-256, build_type: Release-Live_Stream },
           { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_AV_DualCore,             proj: mlek_dual,            target_type: AE722F80F55D5LS,         build_type: Debug-Live_Stream },
           { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_AV_DualCore,             proj: mlek_dual,            target_type: AE722F80F55D5LS,         build_type: Release-Live_Stream },
-#         { tool: CLANG, dir: ./Alif/AppKit_D3/MLEK_AV_DualCore,             proj: mlek_dual,            target_type: AE722F80F55D5LS,         build_type: Debug-Live_Stream },
-#        { tool: CLANG, dir: ./Alif/AppKit_D3/MLEK_AV_DualCore,             proj: mlek_dual,            target_type: AE722F80F55D5LS,         build_type: Release-Live_Stream },
           { tool: AC6,   dir: ./Alif/AppKit_D3/Tensorflow_LiteRT_HelloWorld, proj: TFLiteRT_HelloWorld,  target_type: AE722F80F55D5LS,         build_type: Debug },
           { tool: AC6,   dir: ./Alif/AppKit_D3/Tensorflow_LiteRT_HelloWorld, proj: TFLiteRT_HelloWorld,  target_type: AE722F80F55D5LS,         build_type: Release }
-#         { tool: CLANG, dir: ./Alif/AppKit_D3/Tensorflow_LiteRT_HelloWorld, proj: TFLiteRT_HelloWorld,  target_type: AE722F80F55D5LS,         build_type: Debug },
-#         { tool: CLANG, dir: ./Alif/AppKit_D3/Tensorflow_LiteRT_HelloWorld, proj: TFLiteRT_HelloWorld,  target_type: AE722F80F55D5LS,         build_type: Release }
           ]
 
       fail-fast: false
@@ -78,8 +68,6 @@ jobs:
       working-directory: ${{matrix.context.dir}}
       run: |
         cbuild ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}} --toolchain ${{matrix.context.tool}} --packs
-#       mkdir -p ./out
-#       cbuild ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}} --toolchain ${{matrix.context.tool}} --packs > ./out/build.log
 
     - name: Upload output for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       uses: actions/upload-artifact@v4
