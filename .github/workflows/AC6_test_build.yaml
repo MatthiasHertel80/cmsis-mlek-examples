@@ -59,11 +59,11 @@ jobs:
     - name: Activate Arm tool license
       uses: ARM-software/cmsis-actions/armlm@v1
 
-    - name: Cache downloaded packs
-      uses: actions/cache@v4
-      with:
-        key: Alif
-        path: /home/runner/.cache/arm/packs/.Download
+    #- name: Cache downloaded packs
+    #  uses: actions/cache@v4
+    #  with:
+    #    key: Alif
+    #    path: /home/runner/.cache/arm/packs/.Download
 
     - name: ${{matrix.context.tool}} Build-Test for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       working-directory: ${{matrix.context.dir}}
