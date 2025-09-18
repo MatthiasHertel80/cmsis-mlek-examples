@@ -69,8 +69,8 @@ jobs:
     - name: ${{matrix.context.tool}} Build-Test for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       working-directory: ${{matrix.context.dir}}
       run: |
-        #cbuild ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}} --toolchain ${{matrix.context.tool}} --packs
-        #cbuild setup ${{matrix.context.proj}}.csolution.yml --active ${{matrix.context.target_type}} --packs
+        cbuild ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}} --toolchain ${{matrix.context.tool}} --packs
+        cbuild setup ${{matrix.context.proj}}.csolution.yml --context-set
         
 
     - name: ${{matrix.context.tool}} Download-Test for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
