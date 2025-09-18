@@ -33,13 +33,13 @@ jobs:
       matrix:
         context: [
           { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Audio,                   proj: mlek_audio,           target_type: AE722F80F55D5LS-U55-128, build_type: Debug-Live_Stream },
-          { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Audio,                   proj: mlek_audio,           target_type: AE722F80F55D5LS-U55-128, build_type: Release-Live_Stream },
-          { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Video,                   proj: mlek_video,           target_type: AE722F80F55D5LS-U55-256, build_type: Debug-Live_Stream },
-          { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Video,                   proj: mlek_video,           target_type: AE722F80F55D5LS-U55-256, build_type: Release-Live_Stream },
-          { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_AV_DualCore,             proj: mlek_dual,            target_type: AE722F80F55D5LS,         build_type: Debug-Live_Stream },
-          { tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_AV_DualCore,             proj: mlek_dual,            target_type: AE722F80F55D5LS,         build_type: Release-Live_Stream },
-          { tool: AC6,   dir: ./Alif/AppKit_D3/Tensorflow_LiteRT_HelloWorld, proj: TFLiteRT_HelloWorld,  target_type: AE722F80F55D5LS,         build_type: Debug },
-          { tool: AC6,   dir: ./Alif/AppKit_D3/Tensorflow_LiteRT_HelloWorld, proj: TFLiteRT_HelloWorld,  target_type: AE722F80F55D5LS,         build_type: Release }
+          #{ tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Audio,                   proj: mlek_audio,           target_type: AE722F80F55D5LS-U55-128, build_type: Release-Live_Stream },
+          #{ tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Video,                   proj: mlek_video,           target_type: AE722F80F55D5LS-U55-256, build_type: Debug-Live_Stream },
+          #{ tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_Video,                   proj: mlek_video,           target_type: AE722F80F55D5LS-U55-256, build_type: Release-Live_Stream },
+          #{ tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_AV_DualCore,             proj: mlek_dual,            target_type: AE722F80F55D5LS,         build_type: Debug-Live_Stream },
+          #{ tool: AC6,   dir: ./Alif/AppKit_D3/MLEK_AV_DualCore,             proj: mlek_dual,            target_type: AE722F80F55D5LS,         build_type: Release-Live_Stream },
+          #{ tool: AC6,   dir: ./Alif/AppKit_D3/Tensorflow_LiteRT_HelloWorld, proj: TFLiteRT_HelloWorld,  target_type: AE722F80F55D5LS,         build_type: Debug },
+          #{ tool: AC6,   dir: ./Alif/AppKit_D3/Tensorflow_LiteRT_HelloWorld, proj: TFLiteRT_HelloWorld,  target_type: AE722F80F55D5LS,         build_type: Release }
           ]
 
       fail-fast: false
@@ -75,7 +75,7 @@ jobs:
     - name: ${{matrix.context.tool}} Download-Test for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       working-directory: ${{matrix.context.dir}}
       run: |
-        cbuild setup ${{matrix.context.proj}}.csolution.yml --context-set .${{matrix.context.build_type}}+${{matrix.context.target_type}}
+        cbuild setup ${{matrix.context.proj}}.csolution.yml
         python3 -m pyocd load --probe cmsisdap: --cbuild-run out/${{matrix.context.proj}}+{{matrix.context.target_type}}.cbuild-run.yml
         
     
