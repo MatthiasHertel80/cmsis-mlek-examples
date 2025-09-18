@@ -55,6 +55,7 @@ jobs:
       uses: ARM-software/cmsis-actions/vcpkg@v1
       with: 
         config: "./vcpkg-configuration.json"
+        cache: 
 
     - name: Activate Arm tool license
       uses: ARM-software/cmsis-actions/armlm@v1
@@ -69,7 +70,15 @@ jobs:
       working-directory: ${{matrix.context.dir}}
       run: |
         cbuild ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}} --toolchain ${{matrix.context.tool}} --packs
+        
 
+    - name: ${{matrix.context.tool}} Download-Test for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
+      working-directory: ${{matrix.context.dir}}
+      run: |
+        cbuild setup ${{matrix.context.proj}}.csolution.yml --context .${{matrix.context.build_type}}+${{matrix.context.target_type}}
+        python3 -m pyocd load --probe cmsisdap: --cbuild-run out/${{matrix.context.proj}}+{{matrix.context.target_type}}.cbuild-run.yml
+        
+    
     - name: Upload output for context ${{matrix.context.proj}}.${{matrix.context.build_type}}+${{matrix.context.target_type}}
       uses: actions/upload-artifact@v4
       with:
